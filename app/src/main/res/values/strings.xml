@@ -1,0 +1,5 @@
+<resources>
+    <!-- TODO 1 (part A): put YOUR app name here. It is the name under the icon on the phone
+         and the big title on the screen. -->
+    <string name="app_name">Pocket Quest</string>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <!-- The window theme (shown for a moment before the Compose screen appears). Light version. -->
+    <style name="Theme.PocketQuest" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>

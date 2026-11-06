@@ -1,0 +1,4 @@
+<resources>
+    <!-- Same theme for phones in dark mode. -->
+    <style name="Theme.PocketQuest" parent="android:Theme.Material.NoActionBar" />
+</resources>

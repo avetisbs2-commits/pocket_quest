@@ -1,0 +1,5 @@
+# Keep the right line endings, so the scripts work on every computer.
+* text=auto
+gradlew text eol=lf
+*.bat text eol=crlf
+*.jar binary

@@ -1,0 +1,25 @@
+# Gradle and build output
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Machine-specific files (every computer has its own)
+local.properties
+.kotlin/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+
+# Signing keys and APK/AAB files
+*.jks
+*.keystore
+*.apk
+*.aab
+
+# OS files
+.DS_Store
+Thumbs.db

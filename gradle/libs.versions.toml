@@ -1,0 +1,19 @@
+# One place for all version numbers (a "version catalog").
+# Chosen on 2026-11-06 from the official Android documentation. See README.md, section "Versions".
+
+[versions]
+agp = "9.5.1"             # Android Gradle plugin (needs Gradle 9.6.0, JDK 17+)
+kotlin = "2.4.10"         # Kotlin and the Compose compiler plugin use the same number
+composeBom = "2026.09.00" # Jetpack Compose "bill of materials": it picks matching Compose versions
+activityCompose = "1.13.0"
+
+[libraries]
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
