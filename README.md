@@ -31,7 +31,7 @@ The counter is kept while the app is open (also when you rotate the phone) and s
 | About **10 GB** free disk space | Android Studio + SDK + emulator image + Gradle downloads |
 | **Internet** for the first start | Studio and Gradle download files. Later it works offline. |
 | macOS, Windows or Linux | 8 GB RAM is the minimum, 16 GB is comfortable for the emulator |
-| An **Android phone** (optional) | For Task 7. No Android phone? Use the emulator. iPhone: see section 8. |
+| An **Android phone** (optional) | For Task 7. No Android phone? Use the emulator. iPhone: see section 6. |
 
 ### Install Android Studio and the SDK parts
 
