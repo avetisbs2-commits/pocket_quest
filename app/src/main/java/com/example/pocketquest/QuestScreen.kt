@@ -43,22 +43,21 @@ import androidx.compose.ui.unit.dp
 //         "primary" = buttons and title, "primaryContainer" = background of the quest card.
 //         Also try a different card corner (RoundedCornerShape below) or spacing (dp numbers).
 private val LightColors = lightColorScheme(
-    primary = Color(0xFF3F51B5),
-    onPrimary = Color.White,
-    primaryContainer = Color(0xFFDDE1FF),
-    onPrimaryContainer = Color(0xFF111B5E),
-    background = Color(0xFFFFFFFF),
-    onBackground = Color(0xFF1B1B1F),
+    primary = Color(0xFFF2B705),
+    onPrimary = Color(0xFF332600),
+    primaryContainer = Color(0xFFFFE8A3),
+    onPrimaryContainer = Color(0xFF3D2E00),
+    background = Color(0xFFFFFBF0),
+    onBackground = Color(0xFF252117),
 )
 
-// The same colors for phones that are in dark mode. Optional to change.
 private val DarkColors = darkColorScheme(
-    primary = Color(0xFFB7C4FF),
-    onPrimary = Color(0xFF16248C),
-    primaryContainer = Color(0xFF2C3A9E),
-    onPrimaryContainer = Color(0xFFDDE1FF),
-    background = Color(0xFF121316),
-    onBackground = Color(0xFFE3E1E6),
+    primary = Color(0xFFFFD54F),
+    onPrimary = Color(0xFF3D2E00),
+    primaryContainer = Color(0xFF594500),
+    onPrimaryContainer = Color(0xFFFFE8A3),
+    background = Color(0xFF1C1A14),
+    onBackground = Color(0xFFF0EADC),
 )
 
 @Composable
@@ -73,7 +72,7 @@ fun PocketQuestTheme(content: @Composable () -> Unit) {
 
 // TODO 1 (part B): Put YOUR name here. The greeting on the screen uses it.
 //                  (Part A is in app/src/main/res/values/strings.xml: the app name.)
-private const val PLAYER_NAME = "Student"
+private const val PLAYER_NAME = "Avetis"
 
 @Composable
 fun QuestScreen() {
@@ -113,7 +112,7 @@ fun QuestScreen() {
             // The card with the current quest
             Card(
                 modifier = Modifier.fillMaxWidth(),
-                shape = RoundedCornerShape(24.dp),
+                shape = RoundedCornerShape(32.dp),
                 colors = CardDefaults.cardColors(
                     containerColor = MaterialTheme.colorScheme.primaryContainer,
                     contentColor = MaterialTheme.colorScheme.onPrimaryContainer,
@@ -122,7 +121,7 @@ fun QuestScreen() {
                 Column(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(24.dp),
+                        .padding(28.dp),
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.spacedBy(12.dp),
                 ) {

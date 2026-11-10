@@ -14,6 +14,10 @@ val quests: List<String> = listOf(
     "Tidy your desk for three minutes",
     "Write down one thing you learned today",
     "Send a kind message to a friend",
+    "Learn one new English word",
+    "Write a short journal entry",
+    "Listen to a new song",
+    "Organize your phone's home screen",
 )
 
 // Chooses the next quest to show.
@@ -24,5 +28,12 @@ val quests: List<String> = listOf(
 //         Hints: look at filter { }, or use a loop. Use the previousQuest parameter (it is not used yet).
 //         Think: what happens if the list has only one quest?
 fun pickNextQuest(previousQuest: String?): String {
-    return quests.random()
+    val availableQuests = quests.filter { it != previousQuest }
+
+    return if (availableQuests.isEmpty()) {
+        quests.random()
+    } else {
+        availableQuests.random()
+    }
 }
+
